@@ -1,0 +1,28 @@
+# Node
+node_modules/
+.next/
+dist/
+
+# Python
+.venv/
+.venv*/
+__pycache__/
+*.pyc
+*.pyo
+
+# Data / artifacts
+quiz-video-backend/data/
+quiz-video-backend/**/*.faiss
+quiz-video-backend/**/*.wav
+quiz-video-backend/**/*.mp4
+quiz-video-backend/**/*.json
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+.env.local
+
+# Logs
+*.log
