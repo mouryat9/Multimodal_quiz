@@ -13,12 +13,14 @@ app.include_router(quiz_router, prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://10.80.32.200:3000",
+        "http://localhost:3000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 @app.on_event("startup")
 def _startup():
     ensure_dirs()
